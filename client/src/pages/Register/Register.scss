@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap");
+.register {
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  .card {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    min-height: 110px;
+    overflow: hidden;
+    border-radius: 10px;
+    .left {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      h1 {
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        label {
+          padding-top: 3px;
+        }
+        input {
+          border: none;
+          border-bottom: 1px solid lightslategray;
+          padding: 4px 10px;
+
+          font-family: "Nunito", sans-serif;
+          font-size: larger;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          font-size: 20px;
+          background-color: pink;
+          color: black;
+          font-weight: bold;
+          font-family: "Nunito", sans-serif;
+          cursor: pointer;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      background: linear-gradient(
+          rgba(75, 134, 75, 0.473),
+          rgba(136, 136, 99, 0.692)
+        ),
+        url("social-media-image.jfif") center;
+      background-size: cover;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      p {
+      }
+      span {
+        font-size: 15px;
+      }
+      button {
+        width: 50%;
+        padding: 10px;
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: white;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: pink;
+      }
+    }
+  }
+}

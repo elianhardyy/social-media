@@ -1,0 +1,13 @@
+.rightbar {
+  flex: 3;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px);
+  overflow: scroll;
+}
+/* .rightbar&::-webkit-scrollbar {
+    display: none;
+  } */
+.container {
+  padding: 20px;
+}

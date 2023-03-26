@@ -1,0 +1,71 @@
+nav {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  position: sticky;
+
+  top: 0px;
+  background-color: white;
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    span {
+      font-weight: bold;
+      font-size: 20px;
+      font-family: "Nunito", sans-serif;
+      color: green;
+      text-decoration: none;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 6px;
+      padding: 5px;
+      input {
+        border: none;
+        width: 500px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .messanger {
+      //   width: 40px;
+      //   height: 40px;
+      //   border-radius: 50%;
+      //   background-color: grey;
+      //   .msg-icon {
+      //     position: absolute;
+      //     top: 10px;
+      //     margin-left: 10px;
+      //   }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      img {
+        object-fit: cover;
+      }
+      .rounded {
+        border-radius: 50%;
+      }
+    }
+  }
+}
