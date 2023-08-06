@@ -14,7 +14,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import RightBar from "./components/Rightbar/RightBar";
 import Home from "./pages/Home/Home";
 import User from "./pages/User/User";
-
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import Profile from "./pages/Profile/Profile";
+const queryClient = new QueryClient();
 function App() {
   const [user, setUser] = useState("");
   const userdashboard = async () => {
@@ -32,7 +34,7 @@ function App() {
   useEffect(() => {
     userdashboard();
   }, []);
-  const queryClient = new QueryClient();
+
   const Layout = () => {
     return (
       <QueryClientProvider client={queryClient}>
@@ -67,10 +69,7 @@ function App() {
       path: "/register",
       element: <Register />,
     },
-    {
-      path: "/social/:name",
-      element: <User />,
-    },
+
     {
       path: "/",
       element: <Layout />,
@@ -78,6 +77,10 @@ function App() {
         {
           path: "/",
           element: <Home user={user} />,
+        },
+        {
+          path: "/social/:name",
+          element: <Profile user={user} />,
         },
       ],
     },

@@ -10,7 +10,7 @@ const Home = ({ user }) => {
     <div className="home">
       <Stories />
       <Share user={user} />
-      <Posts />
+      <Posts user={user} />
     </div>
   );
 };

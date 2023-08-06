@@ -24,7 +24,12 @@ const Leftbar = ({ user }) => {
         <div className="menu">
           <div className="user">
             <img src={users} />
-            <span>{user.firstname + "" + user.lastname}</span>
+            <a href={"/social/" + user.username}>
+              <span>
+                {user.firstname + " "}
+                {user.lastname}
+              </span>
+            </a>
           </div>
           <div className="item">
             <img src={friends} />
@@ -50,14 +55,6 @@ const Leftbar = ({ user }) => {
             <img src={messages} />
             <span>Messages</span>
           </div>
-          <Link
-            to="/login"
-            onClick={() => {
-              setClick(logout);
-            }}
-          >
-            Logout
-          </Link>
         </div>
       </div>
     </div>

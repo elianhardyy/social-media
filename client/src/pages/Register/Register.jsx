@@ -108,9 +108,12 @@ const Register = () => {
         <div className="right">
           <h1>Hello</h1>
           <p>
-            Lorem ipsum gatel kijndfjlsnkflnsdkln n nfsdfnksdn klnsdklfnskln
-            klsnglnsjlgnfkl nsklnf lsk snklgnfdsgn snk ng nsklgnskdngkdfngn
-            lnklngknsifjpwjbj igigpsnfznfonwogown k idgnsif jovgj inkl iogveip g
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+            tempore quas minus pariatur quibusdam sed perferendis iusto unde aut
+            praesentium voluptatem amet nobis temporibus, dolorum aliquid labore
+            incidunt accusamus iste optio nesciunt, itaque deserunt soluta. Sed
+            vitae neque, exercitationem iure voluptas tempora corrupti suscipit,
+            libero, repellat facere omnis nam ea!
           </p>
           <Link to="/login">
             <button>Login</button>

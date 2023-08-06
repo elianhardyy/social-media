@@ -6,24 +6,24 @@ const Stories = () => {
     <div className="stories">
       <div className="story">
         <img src={imagewong} alt="nice" />
-        <span>John TOTTTTTTT</span>
+        <span>John Doe</span>
         <button>+</button>
       </div>
       <div className="story">
         <img src={imagewong} alt="" />
-        <span>John Cok</span>
+        <span>John Doe</span>
       </div>
       <div className="story">
         <img src={imagewong} alt="" />
-        <span>John Cok</span>
+        <span>John Doe</span>
       </div>
       <div className="story">
         <img src={imagewong} alt="" />
-        <span>John Cok</span>
+        <span>John Doe</span>
       </div>
       <div className="story">
         <img src={imagewong} alt="" />
-        <span>John Cok</span>
+        <span>John Doe</span>
       </div>
     </div>
   );

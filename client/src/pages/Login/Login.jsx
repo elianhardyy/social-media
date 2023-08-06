@@ -45,8 +45,12 @@ const Login = ({ setUser }) => {
         <div className="left">
           <h1>Social Media App</h1>
           <p>
-            Lorem ipsum dolor kolor papapa nfdsknfkdsln kfnsdknfskn dksfnsklfnsk
-            lsdfnsklfdn kdsnflsdnvn fsnsdklnf
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+            tempore quas minus pariatur quibusdam sed perferendis iusto unde aut
+            praesentium voluptatem amet nobis temporibus, dolorum aliquid labore
+            incidunt accusamus iste optio nesciunt, itaque deserunt soluta. Sed
+            vitae neque, exercitationem iure voluptas tempora corrupti suscipit,
+            libero, repellat facere omnis nam ea!
           </p>
           <Link to="/register">
             <button>Register</button>

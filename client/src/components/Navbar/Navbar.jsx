@@ -6,11 +6,12 @@ import UserProfile from "./user.png";
 import Dropdown from "../Dropdown/Dropdown";
 import SearchIcon from "@mui/icons-material/Search";
 import TextsmsIcon from "@mui/icons-material/Textsms";
+import profile from "../../img/userprofile.png";
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
   return (
-    <div className={isActive ? "active" : ""} {...props}>
+    <div className={isActive ? "active" : " "} {...props}>
       <Link to={to} {...props}>
         {children}
       </Link>
@@ -66,7 +67,7 @@ const Navbar = ({ user, setUser }) => {
       <>
         <div className="left">
           <Link
-            href="/dashboard"
+            href="/"
             className="site-title"
             style={{ textDecoration: "none" }}
           >
@@ -84,20 +85,21 @@ const Navbar = ({ user, setUser }) => {
           </div>
           <div
             className="user"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
+            onClick={() => {
+              setDropdown(!dropdown);
+            }}
           >
-            <Link to={`/social/${user.username}`} className="nav-links">
+            <div className="nav-links">
               <img
                 src={
-                  "http://localhost:4000/public/" + user.profile.photo != null
+                  user.profile != undefined
                     ? "http://localhost:4000/public/" + user.profile.photo
-                    : "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    : profile
                 }
                 width="40px"
                 className="rounded"
               />
-            </Link>
+            </div>
             {dropdown && <Dropdown user={user} logout={logout} />}
           </div>
         </div>
